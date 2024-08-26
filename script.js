@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const images = ['image/pdg.jpg', 'image/mais.jpg', 'image/sesame.jpg', 'image/sesame2.jpg', 'image/noix.jpg', 'image/soja.jpg']; // Liste des images
+    const images = ['pdg.jpg', 'mais.jpg', 'sesame.jpg', 'sesame2.jpg', 'noix.jpg', 'soja.jpg']; // Liste des images
     const coverImage = document.querySelector('.cover-image img');
     let currentIndex = 0;
 
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(changeImage, 5000); // Changer d'image toutes les 5 secondes
 });
 document.addEventListener('DOMContentLoaded', function() {
-    const images = ['image/pdg.jpg', 'image/mais.jpg', 'image/sesame.jpg', 'image/sesame2.jpg', 'image/noix.jpg', 'image/soja.jpg'];
+    const images = ['pdg.jpg', 'mais.jpg', 'sesame.jpg', 'sesame2.jpg', 'noix.jpg', 'soja.jpg'];
     const coverImage = document.querySelector('.cover-image img');
     let currentIndex = 0;
 
