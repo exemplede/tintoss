@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location d'Appartements</title>
+    <!-- Lien vers Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS personnalisé -->
+</head>
+
+<body>
+    <div class="header">
+        <img src="image/logo.jpg" alt="Image 1" style="float: left;">
+        <img src="image/logo.jpg" alt="Image 2" style="float: right;">
+        <h1>Group TIntoss Import Export</h1>
+        <p>Votre partenaire de confiance pour l'importation et l'exportation</p>
+    </div>
+
+    <!-- Section d'introduction des appartements -->
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Découvrez nos Appartements de Qualité</h1>
+            <p class="lead">Nous offrons une gamme variée d'appartements, adaptés à tous les besoins et budgets. Tous
+                nos logements sont en excellent état et prêts à être habités. Parcourez notre sélection ci-dessous et
+                trouvez l'appartement idéal pour vous.</p>
+        </div>
+    </div>
+
+    <!-- Galerie d'Appartements -->
+    <div class="container">
+        <div class="row">
+            <!-- Appartement 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/im3.jpg" class="card-img-top" alt="Appartement 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Appartement 1</h5>
+                        <p class="card-text">Prix: 500,000 FCFA/mois</p>
+                        <p class="card-text">État: Libre</p>
+                        <p class="card-text">3 chambre salon ,climatiser</p>
+                        <p class="card-text">Connection internet</p>
+                        <button class="btn btn-primary louer-btn" data-appartement="Appartement 1">Louer</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Appartement 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/im1.jpg" class="card-img-top" alt="Appartement 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Appartement 2</h5>
+                        <p class="card-text">Prix: 750,000 FCFA/mois</p>
+                        <p class="card-text">État: Libre</p>
+                        <p class="card-text">3 chambre salon ,climatiser</p>
+                        <p class="card-text">Connection internet</p>
+                        <button class="btn btn-primary louer-btn" data-appartement="Appartement 2">Louer</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Appartement 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="image/im.jpg" class="card-img-top" alt="Appartement 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Appartement 3</h5>
+                        <p class="card-text">Prix: 1,000,000 FCFA/mois</p>
+                        <p class="card-text">État:Libre</p>
+                        <p class="card-text">3 chambre salon ,climatiser</p>
+                        <p class="card-text">Connection internet</p>
+                        <button class="btn btn-primary louer-btn" data-appartement="Appartement 3">Louer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de location -->
+    <div class="modal fade" id="rentModal" tabindex="-1" aria-labelledby="rentModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="rentModalLabel">Louer un Appartement</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="appartementName"></p>
+                    <div class="form-group">
+                        <label for="nom">Nom :</label>
+                        <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom">
+                    </div>
+                    <div class="form-group">
+                        <label for="ville">Ville :</label>
+                        <input type="text" class="form-control" id="ville" placeholder="Entrez votre ville">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" id="confirmRent">Louer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lien vers jQuery, Bootstrap JS et le fichier JavaScript personnalisé -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> <!-- Lien vers le fichier JavaScript personnalisé -->
+</body>
+
+</html>

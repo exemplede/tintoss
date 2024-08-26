@@ -1,0 +1,494 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgba(240, 230, 140, 0.8);
+  /* Fond doré transparent */
+  border-bottom: 3px solid rgba(75, 0, 130, 0.8);
+  /* Bordure violette */
+  position: relative;
+}
+
+.butt {
+  border-radius: 35%;
+  width: 20px;
+  background-color: rgba(75, 0, 130, 0.8);
+  border: solid;
+  justify-content: center;
+}
+
+.header h1 {
+  color: rgba(75, 0, 130, 0.8);
+  /* Couleur violette pour le texte */
+  font-family: 'Arial', sans-serif;
+  /* Police pour le texte */
+  font-size: 2.5em;
+  /* Taille de la police */
+  margin: 0;
+}
+
+.header p {
+  color: rgba(75, 0, 130, 0.8);
+  /* Couleur violette pour le sous-titre */
+  font-size: 1.2em;
+  /* Taille de la police */
+  margin-top: 10px;
+}
+
+.header img {
+  max-width: 100px;
+  /* Limiter la taille des images dans l'en-tête */
+  margin: 10px;
+  /* Marge autour des images */
+}
+
+.navbar {
+  background-color: rgba(240, 230, 140, 0.8);
+  /* Couleur dorée transparente */
+  border-radius: 15px;
+  /* Bordures arrondies */
+  max-width: 80%;
+  /* Réduire la taille de la nav */
+  margin: auto;
+  /* Centrer la nav */
+  padding: 10px 20px;
+  /* Espace interne pour ajuster la taille */
+}
+
+.nav-link {
+  color: black !important;
+  /* Couleur du texte en noir */
+  font-size: 1.2em;
+  /* Augmenter la taille de la police */
+}
+
+.nav-link:hover {
+  color: #4b0082 !important;
+  /* Couleur tendant vers la royauté (violet) */
+  text-decoration: underline;
+  /* Soulignement au survol */
+  background-color: #dcdcdc;
+  /* Changer le fond au survol (gris clair) */
+  border-radius: 5px;
+  /* Bordures arrondies au survol */
+}
+
+.dropdown-menu {
+  border-radius: 10px;
+  /* Bordures arrondies pour le menu déroulant */
+}
+
+.dropdown-menu a:hover {
+  background-color: #4b0082;
+  /* Couleur tendant vers la royauté */
+  color: white !important;
+  /* Texte en blanc lorsqu'on survole les éléments du menu */
+}
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-collapse {
+    justify-content: center;
+    /* Centre les éléments */
+  }
+}
+
+.cover-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-image {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.cover-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fadeInOut 10s infinite;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.cover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Arial', sans-serif;
+  background-color: rgba(75, 0, 130, 0.6);
+  /* Fond violet transparent */
+  padding: 20px;
+  border-radius: 10px;
+  /* Bordures arrondies pour le texte */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Ombre portée pour le texte */
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.cover-section:hover .cover-text {
+  opacity: 1;
+  transform: translate(-50%, -60%);
+  background-color: rgba(75, 0, 130, 0.8);
+  /* Fond violet opaque lors du survol */
+}
+
+@media (max-width: 576px) {
+  .cover-text {
+    font-size: 1.2em;
+    /* Taille de la police plus petite sur les petits écrans */
+    padding: 10px;
+  }
+}
+
+.info-section {
+  background-color: rgba(255, 192, 203, 0.3);
+  /* Rose transparent */
+  padding: 40px 0;
+  margin: 20px 0;
+  /* Marge pour éviter l'écrasement */
+}
+
+.info-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permet aux éléments de passer à la ligne sur petits écrans */
+  gap: 20px;
+  /* Espace entre les blocs */
+}
+
+.info-text,
+.info-images {
+  background-color: #4b0082;
+  /* Couleur violette pour le texte */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Ombre portée */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.info-text:hover,
+.info-images:hover {
+  transform: scale(1.05);
+  /* Agrandir légèrement au survol */
+  background-color: #3b0a45;
+  /* Couleur violette plus foncée pour le survol */
+}
+
+.info-text {
+  flex: 1;
+  min-width: 300px;
+  /* Largeur minimale pour les écrans plus petits */
+}
+
+.info-images {
+  flex: 1;
+  min-width: 300px;
+  /* Largeur minimale pour les écrans plus petits */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-images img {
+  width: 100%;
+  height: auto;
+  /* Hauteur automatique pour maintenir les proportions */
+  margin: 10px 0;
+  /* Marge entre les images */
+  border-radius: 10px;
+  /* Bordures arrondies pour les images */
+}
+
+@media (max-width: 768px) {
+  .info-section .container {
+    flex-direction: column;
+    /* Empile les blocs en colonne sur petits écrans */
+  }
+}
+
+
+.info-section2 {
+  background-color: rgba(192, 250, 177, 0.3);
+  /* Rose transparent */
+  padding: 40px 0;
+  margin: 20px 0;
+  /* Marge pour éviter l'écrasement */
+}
+
+.info-section2 .container {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permet aux éléments de passer à la ligne sur petits écrans */
+  gap: 20px;
+  /* Espace entre les blocs */
+}
+
+.btn-learn-more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4b0082;
+  /* Couleur violette */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-learn-more:hover {
+  background-color: #3b0a45;
+  /* Couleur violette plus foncée */
+  transform: scale(1.1);
+}
+
+.square-section {
+  background-color: #eee;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.square-container {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #4b0082;
+  /* Couleur violette */
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.square-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden-image {
+  display: none;
+  /* Cacher l'image par défaut */
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .info-section .container {
+    flex-direction: column;
+    /* Empile les blocs en colonne sur petits écrans */
+  }
+}
+
+.text-image-section {
+  background-color: #ffd700;
+  /* Couleur dorée */
+  padding: 40px 0;
+}
+
+.text-image-section .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.text-image-section .row {
+  display: flex;
+  align-items: center;
+}
+
+.text-image-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.text-image-section p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.text-image-section img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dynamic-footer {
+  background-color: #f0f0f0;
+  /* Blanc sale */
+  padding: 30px 0;
+  position: fixed;
+  width: 100%;
+  bottom: -100px;
+  /* Cacher le footer initialement */
+  opacity: 0;
+  /* Initialement invisible */
+  transition: opacity 0.5s, bottom 0.5s;
+  /* Effets de transition */
+}
+
+.dynamic-footer.show {
+  bottom: 0;
+  /* Positionner le footer à sa place */
+  opacity: 1;
+  /* Rendre le footer visible */
+}
+
+.dynamic-footer h5 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.dynamic-footer ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.dynamic-footer a {
+  color: black;
+  text-decoration: none;
+}
+
+.dynamic-footer a:hover {
+  text-decoration: underline;
+}
+
+.dynamic-footer .list-inline-item {
+  margin-right: 10px;
+}
+
+.dynamic-footer .fab {
+  font-size: 24px;
+  color: black;
+  transition: color 0.3s;
+}
+
+.dynamic-footer .fab:hover {
+  color: rgba(75, 0, 130, 0.8);
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: rgba(75, 0, 130, 0.8);
+  border-color: rgba(75, 0, 130, 0.8);
+}
+
+.btn-primary:hover {
+  background-color: rgba(75, 0, 130, 0.8);
+  border-color: rgba(75, 0, 130, 0.8);
+}
+
+.modal-content {
+  border-radius: 8px;
+}
+
+.modal-header {
+  background-color: rgba(75, 0, 130, 0.8);
+  color: white;
+}
+
+.btn-primary {
+  background-color: rgba(75, 0, 130, 0.8);
+  border-color: rgba(75, 0, 130, 0.8);
+}
+
+.btn-primary:hover {
+  background-color: rgba(75, 0, 130, 0.8);
+  border-color: rgba(75, 0, 130, 0.8);
+}
+
+.jumbotron {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.modal-content {
+  border-radius: 8px;
+}
+
+.modal-header {
+  background-color: rgba(75, 0, 130, 0.8);
+  color: white;
+}
+
+.btn-primary {
+  background-color: rgba(75, 0, 130, 0.8);
+  border-color: rgba(75, 0, 130, 0.8);
+}
+
+.btn-primary:hover {
+  background-color: rgba(75, 0, 130, 0.8);
+  border-color: rgba(75, 0, 130, 0.8);
+}
+
+.jumbotron {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.btn-primary {
+  background-color: rgba(75, 0, 130, 0.8);
+  border-color: rgba(75, 0, 130, 0.8);
+}
+
+.btn-primary:hover {
+  background-color: rgba(75, 0, 130, 0.8);
+  border-color: rgba(75, 0, 130, 0.8);
+}
+
+.social-icons i {
+  color: rgba(75, 0, 130, 0.8);
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: rgba(75, 0, 130, 0.8);
+}
