@@ -4,7 +4,458 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exposition des Produits</title><!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exposition des Produits</title>
+    <!-- Lien vers Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS personnalisé -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="logo.jpg" alt="Image 1" style="float: left;">
+        <img src="logo.jpg" alt="Image 2" style="float: right;">
+        <h1>Group TIntoss Import Export</h1>
+        <p>Votre partenaire de confiance pour l'importation et l'exportation</p>
+    </div>
+    <!-- Galerie de Produits -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Produit 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cajou4.jpg" class="card-img-top" alt="Produit 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 1</h5>
+                        <p class="card-text">Description du produit 1.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 1">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cajou2.jpg" class="card-img-top" alt="Produit 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 2</h5>
+                        <p class="card-text">Description du produit 2.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 2">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="cajou.jpg" class="card-img-top" alt="Produit 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 3</h5>
+                        <p class="card-text">Description du produit 3.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 3">Commander</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Produit 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="soja.jpg" class="card-img-top" alt="Produit 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 1</h5>
+                        <p class="card-text">Description du produit 1.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 1">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="soja2.jpg" class="card-img-top" alt="Produit 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 2</h5>
+                        <p class="card-text">Description du produit 2.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 2">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="sesame.jpg" class="card-img-top" alt="Produit 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 3</h5>
+                        <p class="card-text">Description du produit 3.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 3">Commander</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Produit 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="sesame3.jpg" class="card-img-top" alt="Produit 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 1</h5>
+                        <p class="card-text">Description du produit 1.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 1">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="sesame5.jpg" class="card-img-top" alt="Produit 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 2</h5>
+                        <p class="card-text">Description du produit 2.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 2">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="noix.jpg" class="card-img-top" alt="Produit 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 3</h5>
+                        <p class="card-text">Description du produit 3.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 3">Commander</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Produit 1 -->
+            <div class="col-md-4">
+                <div class="card" id="mais">
+                    <img src="noix2.jpg" class="card-img-top" alt="Produit 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 1</h5>
+                        <p class="card-text">Description du produit 1.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 1">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="riz4.jpg" class="card-img-top" alt="Produit 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 2</h5>
+                        <p class="card-text">Description du produit 2.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 2">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="riz5.jpg" class="card-img-top" alt="Produit 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 3</h5>
+                        <p class="card-text">Description du produit 3.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 3">Commander</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Produit 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="riz6.jpg" class="card-img-top" alt="Produit 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 1</h5>
+                        <p class="card-text">Description du produit 1.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 1">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="riz7.jpg" class="card-img-top" alt="Produit 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 2</h5>
+                        <p class="card-text">Description du produit 2.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 2">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="riz8.jpg" class="card-img-top" alt="Produit 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 3</h5>
+                        <p class="card-text">Description du produit 3.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 3">Commander</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Produit 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="anacade2.jpg" class="card-img-top" alt="Anacade ">
+                    <div class="card-body">
+                        <h5 class="card-title">Anacade</h5>
+                        <p class="card-text"></p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 1">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="anacade4.jpg" class="card-img-top" alt="Produit 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Anacade</h5>
+                        <p class="card-text"></p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 2">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="anacade6.jpg" class="card-img-top" alt="Produit 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Anacade</h5>
+                        <p class="card-text"></p>
+                        <button class="btn btn-primary commander-btn" data-product="Anacade">Commander</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Produit 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="anacade5.jpg" class="card-img-top" alt="Produit 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Anacade</h5>
+                        <p class="card-text"></p>
+                        <button class="btn btn-primary commander-btn" data-product="Anacade">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="anacade7.jpg" class="card-img-top" alt="Produit 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Anacade</h5>
+                        <p class="card-text"></p>
+                        <button class="btn btn-primary commander-btn" data-product="Anacade">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="anacade8.jpg" class="card-img-top" alt="Produit 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Anacade</h5>
+                        <p class="card-text"></p>
+                        <button class="btn btn-primary commander-btn" data-product="Anacade">Commander</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Produit 1 -->
+            <div class="col-md-4">
+                <div class="card" id="mais">
+                    <img src="mais4.jpg" class="card-img-top" alt="Produit 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Mais rouge </h5>
+                        <p class="card-text"></p>
+                        <button class="btn btn-primary commander-btn" data-product="Mais rouge">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="mais5.jpg" class="card-img-top" alt="Produit 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Mais Blanc </h5>
+                        <p class="card-text"></p>
+                        <button class="btn btn-primary commander-btn" data-product="Mais Blanc">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="haricots.jpg" class="card-img-top" alt="Produit 3">
+                    <div class="card-body">
+                        <h5 class="card-title">haricots </h5>
+                        <p class="card-text"></p>
+                        <button class="btn btn-primary commander-btn" data-product="haricots">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="arachide.jpeg" class="card-img-top" alt="Produit 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Produit 3</h5>
+                        <p class="card-text">Description du produit 3.</p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 3">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="oseille.jpeg" class="card-img-top" alt="Oseille ">
+                    <div class="card-body">
+                        <h5 class="card-title">Oseille </h5>
+                        <p class="card-text">Oseille rouge </p>
+                        <button class="btn btn-primary commander-btn" data-product="Oseille">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="purecuman.jpeg" class="card-img-top" alt="Purecument">
+                    <div class="card-body">
+                        <h5 class="card-title">Zinzinbre</h5>
+                        <p class="card-text"></p>
+                        <button class="btn btn-primary commander-btn" data-product="Purecument">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Tamarin.jpeg" class="card-img-top" alt="Tamarin">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"></p>
+                        <button class="btn btn-primary commander-btn" data-product="Tamarin">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="kegou.jpeg" class="card-img-top" alt="Purecument">
+                    <div class="card-body">
+                        <h5 class="card-title">Petit poids sec </h5>
+                        <p class="card-text"></p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 3">Commander</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="blanc.jpeg" class="card-img-top" alt="Purecument">
+                    <div class="card-body">
+                        <h5 class="card-title">Teedo</h5>
+                        <p class="card-text"></p>
+                        <button class="btn btn-primary commander-btn" data-product="Produit 3">Commander</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de commande -->
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderModalLabel">Commander le produit</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="productName"></p>
+                    <div class="form-group">
+                        <label for="nom">Nom :</label>
+                        <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" class="form-control" id="prenom" placeholder="Entrez votre prénom">
+                    </div>
+                    <div class="form-group">
+                        <label for="ville">Ville :</label>
+                        <input type="text" class="form-control" id="ville" placeholder="Entrez votre ville">
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Nombre de sacs :</label>
+                        <input type="number" class="form-control" id="quantity" min="1" value="1">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" id="confirmOrder">Commander</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lien vers jQuery, Bootstrap JS et le fichier JavaScript personnalisé -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> <!-- Lien vers le fichier JavaScript personnalisé -->
+
+
+    <footer class="dynamic-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Liens de navigation -->
+                <div class="col-md-4">
+                    <h5>Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="produit.html">Nos Produits</a></li>
+                        <li><a href="appart.html">Autre Services</a></li>
+                        <li><a href="cont.html">Nous Contacter</a></li>
+                      </ul>
+                </div>
+
+                <!-- Icônes des plateformes connues -->
+                <div class="col-md-4">
+                    <h5>Suivez-nous</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="list-inline-item"><a href="https://wa.me/qr/DVWYVBGJO5R2A1 "><i
+                                    class="fab fa-whatsapp"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact par email -->
+                <div class="col-md-4">
+                    <h5>Contactez-nous</h5>
+                    <p>Email: <a href="mailto:contact@tintoss.com">contact@tintoss.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lien vers jQuery et Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> <!-- Lien vers le fichier JavaScript personnalisé -->
+</body>
+
+</html>
     <!-- Lien vers Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS personnalisé -->
