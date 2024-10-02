@@ -214,6 +214,17 @@ new Glide('.glide', {
         this.textContent = "En savoir plus"; // Réinitialiser le texte du bouton
     }
 });
+document.getElementById("readMoreBtn").addEventListener("click", function() {
+    var moreText = document.getElementById("moreText");
+    if (moreText.style.display === "none") {
+        moreText.style.display = "inline"; // Afficher le texte
+        this.textContent = "Moins"; // Changer le texte du bouton
+    } else {
+        moreText.style.display = "none"; // Cacher le texte
+        this.textContent = "En savoir plus"; // Réinitialiser le texte du bouton
+    }
+});
+
 
 
 
