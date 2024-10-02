@@ -94,7 +94,7 @@ $(document).ready(function() {
 
         if (nom && prenom && ville && quantity) {
             const message = `Bonjour, je m'appelle ${prenom} ${nom} de ${ville}. Je suis intéressé par l'achat de ${quantity} sacs de ${selectedProduct}. Merci de me contacter pour plus de détails.`;
-            const phone = '+22656603913'; // Remplacez par votre numéro de téléphone
+            const phone = '+22670220980'; // Remplacez par votre numéro de téléphone
             const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
             window.open(url, '_blank');
         } else {
@@ -123,7 +123,7 @@ $(document).ready(function() {
 
         if (nom && prenom && ville) {
             const message = `Bonjour, je m'appelle ${prenom} ${nom} de ${ville}. Je suis intéressé par la location de ${selectedAppartement}. Merci de me contacter pour plus de détails.`;
-            const phone = '+22656603913'; // Remplacez par votre numéro de téléphone
+            const phone = '+22670220980'; // Remplacez par votre numéro de téléphone
             const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
             window.open(url, '_blank');
         } else {
@@ -152,7 +152,7 @@ $(document).ready(function() {
 
         // Construire le message WhatsApp
         const whatsappMessage = `Nom: ${name}\nEmail: ${email}\nSujet: ${subject}\nMessage: ${message}`;
-        const whatsappURL = `https://api.whatsapp.com/send?phone=+22656603913&text=${encodeURIComponent(whatsappMessage)}`;
+        const whatsappURL = `https://api.whatsapp.com/send?phone=+22670220980&text=${encodeURIComponent(whatsappMessage)}`;
 
         // Rediriger vers WhatsApp
         window.open(whatsappURL, '_blank');
@@ -173,5 +173,47 @@ $(document).ready(function() {
         }
     });
 });
+new Glide('.glide', {
+    type: 'carousel',
+    perView: 3,
+    gap: 30,
+    breakpoints: {
+      768: {
+        perView: 2
+      },
+      480: {
+        perView: 1
+      }
+    }
+  }).mount()
+  
+  // Filtrage et tri des produits/appartements
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const productCards = document.querySelectorAll('.card');
+  
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter;
+      productCards.forEach(card => {
+        if (filter === 'all' || card.dataset.category === filter) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+  
+  document.getElementById("readMoreBtn").addEventListener("click", function() {
+    var moreText = document.getElementById("moreText");
+    if (moreText.style.display === "none") {
+        moreText.style.display = "inline"; // Afficher le texte
+        this.textContent = "Moins"; // Changer le texte du bouton
+    } else {
+        moreText.style.display = "none"; // Cacher le texte
+        this.textContent = "En savoir plus"; // Réinitialiser le texte du bouton
+    }
+});
+
 
 
