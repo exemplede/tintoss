@@ -492,3 +492,36 @@ body {
 .social-icons i:hover {
   color: rgba(75, 0, 130, 0.8);
 }
+
+.info-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Limite de la largeur */
+    margin: 20px auto; /* Centrer sur la page */
+    transition: all 0.3s ease; /* Animation douce */
+}
+
+.info-text {
+    line-height: 1.6; /* Espacement entre les lignes */
+    margin-bottom: 15px; /* Espacement inférieur */
+}
+
+.btn {
+    background-color: rgba(75, 0, 130, 0.8); /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Suppression de la bordure */
+    padding: 10px 15px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Changement de curseur */
+    transition: background-color 0.3s ease; /* Animation douce au survol */
+}
+
+.btn:hover {
+    background-color:  rgba(75, 0, 130, 0.8);; /* Couleur au survol */
+}
+
+#moreText {
+    display: none; /* Cacher le texte supplémentaire par défaut */
+}
