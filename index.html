@@ -10,7 +10,8 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS personnalisé -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap">
  <style>
     /* Style de l'en-tête */
     .header {
@@ -61,6 +62,116 @@
       font-size: 1.2rem;
       margin-top: 10px;
     }
+    .section-title {
+      font-weight: 600;
+      color: var(--primary-color);
+      margin-bottom: 1.5rem;
+      text-align: center;
+  }
+  .content-section {
+      padding: 4rem 0;
+  }
+  .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s;
+  }
+
+  /* Effets de survol pour les boutons */
+  .btn-custom {
+      background-color: var(--accent-color);
+      color: white;
+      transition: background-color 0.3s;
+  }
+  .btn-custom:hover {
+      background-color: #ff7e50;
+  }
+
+  .footer {
+      background-color: #3c2a3c; /* Couleur complémentaire au rouge bordeaux */
+      color: #ffffff; /* Couleur du texte */
+      padding: 60px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .footer h3 {
+      margin-bottom: 30px;
+      font-size: 1.8em;
+      text-align: center;
+      position: relative;
+      animation: fadeIn 0.5s ease-in-out; /* Animation d'apparition */
+    }
+    
+    .footer p {
+      text-align: center;
+      font-size: 1.1em;
+      animation: fadeIn 1s ease-in-out; /* Animation d'apparition */
+    }
+    
+    .footer a {
+      color: #ffcccc; /* Couleur des liens */
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .footer a:hover {
+      color: #ffffff; /* Changer la couleur au survol */
+      text-decoration: underline;
+    }
+    
+    /* Effets des icônes de réseaux sociaux */
+    .social-icons a {
+      font-size: 2em;
+      margin: 0 15px;
+      transition: transform 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+      transform: scale(1.2); /* Agrandissement au survol */
+      color: #ffcccc; /* Couleur au survol */
+    }
+    
+    /* Animation d'apparition */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+  /* Section des témoignages */
+  .testimonial {
+      background-color: #f8f9fa;
+      border-left: 5px solid var(--primary-color);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      transition: transform 0.3s;
+  }
+  .testimonial:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
+
+  /* Animations pour les icônes */
+.icon {
+      font-size: 2rem;
+      transition: transform 0.3s;
+  }
+.icon:hover {
+      transform: scale(1.2);
+  }
+.btn-custom {
+    background-color: var(--accent-color);
+    color: rgb(15, 49, 77);
+    transition: background-color 0.3s;
+}
+.btn-custom:hover {
+    background-color: #ff7e50;
+}
   </style>
 </head>
 <body>
@@ -72,7 +183,7 @@
   <div class="menu-deroulant">
     <button class="menu-deroulant-btn">Menu</button>
     <div class="menu-deroulant-content">
-      <a href="index.htm">Accueil</a>
+      <a href="index.html">Accueil</a>
       <a href="produit.html">Nos Produits</a>
       <a href="appart.html">appart </a>
       <a href="cont.html">Nous Contacter</a>
@@ -122,54 +233,35 @@
       </div>
     </div>
   </section>
-
-  <section class="info-section2">
-    <div class="info-container">
-    <div class="info-text" id="infoText">
-        chez Group TIntoss Import Export, où nous vous proposons des appartements de qualité supérieure pour répondre à
-        tous vos besoins en matière de logement. Que vous recherchiez un appartement confortable pour une personne, un
-        espace spacieux pour une famille ou un appartement élégant pour les professionnels, nous avons le bien idéal pour
-        vous.
-        <span id="moreText" style="display:none;">
-            Nos appartements se distinguent par leur design moderne, leur confort exceptionnel et leurs emplacements de choix.
-            Chaque logement est soigneusement sélectionné pour offrir un environnement sûr, propre et agréable, avec des
-            équipements de haute qualité pour garantir votre bien-être. Nous nous engageons à maintenir les plus hauts
-            standards de qualité pour nos locataires, en veillant à ce que chaque appartement soit régulièrement entretenu et
-            vérifié.
-            Nous comprenons que la recherche d'un nouveau logement peut être stressante, c'est pourquoi nous sommes là pour
-            rendre le processus aussi simple et transparent que possible. Notre équipe dédiée est à votre écoute pour vous
-            guider à chaque étape, répondre à vos questions et vous aider à trouver l'appartement parfait en fonction de vos
-            besoins et de votre budget.
-            Avec Group TIntoss Import Export, vous pouvez être assuré de louer un appartement qui répond à toutes vos attentes
-            en termes de confort, de sécurité et de style. Que vous préfériez une vue sur la ville, un quartier calme, ou un
-            accès facile aux transports et aux commodités locales, nous avons ce qu'il vous faut.
-            Faites confiance à notre expertise et à notre engagement pour vous fournir un logement de qualité qui fera de
-            votre séjour une expérience agréable et sans souci. Contactez-nous dès aujourd'hui pour découvrir nos offres et
-            trouver l'appartement de vos rêves.
-        </span>
-        <button id="readMoreBtn" class="btn">En savoir plus</button>
+  <section class="content-section container">
+    <h2 class="section-title">Nos Services</h2>
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <h3>appartement</h3>
+            <p>chez Group TIntoss Import Export, où nous vous proposons des appartements de qualité supérieure pour répondre à
+              tous vos besoins en matière de logement. Que vous recherchiez un appartement confortable pour une personne, un
+              espace spacieux pour une famille ou un appartement élégant pour les professionnels, nous avons le bien idéal pour
+              vous..</p>
+            <button class="btn btn-custom"><a href="appart.html" target="_parent" style="text-decoration: none;"> En savoir plus</a></button>
+        </div>
+        <div class="col-md-6">
+            <img src="house-4516177.jpg" class="img-fluid rounded shadow" alt="Centre">
+        </div>
     </div>
-</div>
 
-    <div class="container">
-
-      <div class="info-images">
-        <img src="im.jpg" alt="Image 1">
-      </div>
-      <div class="info-images">
-        <img src="im3.jpg" alt="Image 2">
-      </div>
-      <div class="info-images">
-        <img src="im3.jpg" alt="Image 3">
-      </div>
-      <div class="info-images">
-        <img src="im1.jpg" alt="Image 4">
-      </div>
-      <div class="infor-images">
-        <button class="btn-learn-more"><a href="appart.html">En savoir plus</a></button>
-      </div>
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="TINTOSS.png" class="img-fluid rounded shadow" alt="Historique">
+        </div>
+        <div class="col-md-6">
+            <h3>Kit electronics </h3>
+            <p>Découvrez nos kits électroniques de haute précision pour hygromètres, conçus pour mesurer et garantir la qualité optimale de vos commandes.</p>
+            <button class="btn btn-custom"><a href="kit.html" style="text-decoration: none;"> Catalogue</a></button>
+        </div>
     </div>
-  </section>
+</section>
+
+  
 
   <!-- Nouvelle section carrée -->
   <section class="square-section">
